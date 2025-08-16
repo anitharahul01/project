@@ -1,0 +1,80 @@
+body {
+font-family: Arial, sans-serif;
+    padding: 0px;
+    background-image: url('/static/image2/liquid.jpg');
+    /* Add your image here */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #1a1919;
+    font-weight: 600;
+}
+h2{
+    font-size: 2em;
+    text-align: center;
+}
+.form-box {
+    max-width: 600px;
+    /* or try 600px for tighter layout */
+    margin: auto;
+    /* centers the box */
+    
+}
+
+.form-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-row {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    flex: 1;
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+input[type="number"] {
+    width: 100%;
+    padding: 5px;
+    background-color: #f0f0f0;
+    /* Light grey input */
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    /* Gap after last input */
+}
+
+button[type="submit"] {
+    background-color: #0f0a0a;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: .8em;
+    /* increase font size */
+    cursor: pointer;
+    margin: 20px auto;
+    display: block
+        /* center the button */
+}
+
+.required-label::after {
+    content: " *";
+    color: red;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #357ac9;
+}

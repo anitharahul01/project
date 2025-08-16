@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Water Quality Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
+<script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=M4vI2WdYumFvZa5mLbYTr8lTJb_8_M-uvqcK4YH2-MMUatg4R6aRItdAoOBCUqLPEXVCg2UOa4m_tXdIAFa1KQcYm6ue6sqay4HpKRq6Y4zGbL7PKiHTdeHDupY1-hOsOhFlRu-TnQlYyV6sC-pIDEzyF3DN1Dw51fKzhM-xa3KC0maWwD_tYsXkfMEgp6jb4wW25xpgh7RH3UQSSVSe22iPGOPIO8tpSfoQrXuwtVPZC3pGONGt8Y6xIqBcZJmeYrhYH1GYKweos-kRQC-YyARS4gNkM-kl_H12rngvJ2U54t6Oja0foGLL9EnVK_j0rn9y5C5sUG3qTByRQe3iDymwR57U-BOeRpTR2CtreRMMzotg74Y75L_u0zu2J1EhtI4jUWnRkIyr1MLSz6gxgCXKu9ORmcfDwmvBtwcFV2fcRSfwQhSQrDeRhTG4raqd38CgYvYJs102QqBKMIlgKUqDRBNw-yBLUilg0TQecrIUlW5GzdYLTYIEMwy0cmayOylBUouaybvoFn2ndhma4DVm4AWr0dAJc61DAvzzJSWQKrHtgYZ7WMYUeK2GZDelIc3FHQo9qorHZzK3G8-CHwjibY4VG6brGn7sjhqZwTBOZ_ImZnkZqbhHWRi4YGwUVFDjZGKZt6XrMXY6gJ57ndAoOS8QKUOP8xb1cI7MbeCCMcTdJGVSd-nT5KOsO8bg4TMVBhjvWmG7z2QGxow6M2crSgk-rlUiyZwp7uTFL1fT4yHuOlF2p-D552Yzzuv-kP8FUS3cFmFk_yD2SbGU12NadwvIRhwnanWg7r3rE46oNQzao6egRid2Oz3s2goRZLKS-TUWax-PZ1qzOO_YGJzE6M3qKmvVbJC0mhWdrRUrjhdnICVxk-CF5AeoDNDMqaC1GnFs-WAPttoXBrrBQQU62U6VX1_YYQXEZGGZr6X8tvby3Jix6nB34NVWM5C-0Xy5EXJTnmow-EsZgQqZXTTDOwo0Cu6yqZ-8qvuFxLUCIr4YIlgM5dFglYWBSxbSAHFwqPWwnfRRG6jxFH3hvSumdFBibIBAD21T07LuhYpbCbVHDJhJhBb1ZBaqcXnp0aK-Xmwp0ErgqG6DPVwydUVLb8EN_Bd_W_rxsPpeoqrsLwtoLu3hDyxzjJtYRFlOUYxW0gdXBsRusSfc9JRfiAzp0QzTqyP72e15a6X5LiRqZR4EwirQopFpRpggjziAtr5pSfsCrvj-Qm65F9SDosbGFS91-mycQ37d8ET7GDYPIzqAI6f8cV8G5I3YLj1y_wItnX2VRN0ArwP8Opalls6YujKB9NviJ2ZOf2EWb3lE_gMJtt6q9hQYy6DbuM3r-ql4BhCXHmC2plmImMKtK0rauOKgq82Ay5rFJRffLwKfzaIfdwFgBkzGac5inJXiA9eagKIPMayzXP7RyPjmDYbBiTPVXIIN8l_9654kZoLKnoi8KirgODB1g81rzwf4nkIizBhfaEARwbvnAufbhvNpDlbam2zv6AKxzFutFItSm_1dJz_ZW-Y5Pj3m0uAOWBEMVIdXWFY3QLscYy1JRybFdZEtvVcVYypgvZqsYTkf9KrDz5jfg5Vodo46rie8kHBwAT3A6pStivaoZG36MyYmxJFivzj8nfWEnJjGHqD-GCyjM-2Ynrk_GdBSp85igZtqOg69xac9LW2RWslf1g" nonce="df7279729b41c565f4661921f1f139ee" charset="UTF-8"></script></head>
+
+<body>
+    <div class="form-box">
+        <h2>Enter Water Quality Parameters</h2>
+        <form action="/predict_water" method="POST">
+            <div class="form-grid">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="required-label">pH:</label>
+                        <input type="number" step="any" name="pH" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="required-label">TH:</label>
+                        <input type="number" step="any" name="TH" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="required-label">TDS:</label>
+                        <input type="number" step="any" name="TDS"required>
+                    </div>
+                    <div class="form-group">
+                        <label>CO3:</label>
+                        <input type="number" step="any" name="CO3">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>HCO3:</label>
+                        <input type="number" step="any" name="HCO3">
+                    </div>
+                    <div class="form-group">
+                        <label>Cl:</label>
+                        <input type="number" step="any" name="Cl">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>SO4:</label>
+                        <input type="number" step="any" name="SO4">
+                    </div>
+                    <div class="form-group">
+                        <label>NO3:</label>
+                        <input type="number" step="any" name="NO3">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Ca:</label>
+                        <input type="number" step="any" name="Ca">
+                    </div>
+                    <div class="form-group">
+                        <label>Mg:</label>
+                        <input type="number" step="any" name="Mg">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Na:</label>
+                        <input type="number" step="any" name="Na">
+                    </div>
+                    <div class="form-group">
+                        <label>K:</label>
+                        <input type="number" step="any" name="K">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>F:</label>
+                        <input type="number" step="any" name="F">
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit">Predict Water Quality</button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Air Quality Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}">
+
+<script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=rcKpGYS1XmoxAxgYHL1Uj7aGYfrt_YjF91dF7wfZQ8oBvkP-3f2yURpjGLoiJeX0SRwrcO9c-kJikJOU7qua94pPDNOCJUh3qblLJcw-N7MCiSMtF8vLT37qa5Mm6Hym_QrUt3lXYwo0kIPd7oVUSbr_qk5Q_2VKEpnpJO1PwjbNpRO_PfGIU9_EWdlrsxjFtR8W1aK8wpdFySGqQgIU2pu_QaiUg5bn1bqaLiCsfYFWRCi42sgI581nYaP79eXDH2Vvx8i55wdmvvS5dmriMsNxcEJbOuPF8rK4R03NBPy44FEMVkd1WfZU_Kzb6MJLbjeaIBfY5qVRiHyV9gHOUWzAeWWhNtBdLbAyOL_72mieD9f_vThqA7pX4swqJTvFNtWZetzAIi25bqa7wTWkburmE3rHBNoqCRPhulmhIoLjw1urpt_kSOVUkSvKhyC4bICnrBmDkZiHJ0Aa2UCCp7N07dm0pu-dRlCT_STH2sTilxUh9gTQqJwhL3uXw-HBnQQaH1myIL4syNF04Jd9fcKvzUTyEtZHwPn1vULnzqdAgPy6inrVlxV5WJDQZUz38iiqOGng5_l90mGCQ0d3UZNFNF_KjsrSb411ocw4QBl8MKB38FTwipSGIYQ6gp75A1RSk-irb54VKB2bTEm2lzNbj-PWZ8onnuSxRHzgbcwH90XeuivxtspRk1eu2hhOUrxOH5dSGwmh_pjunfbTt6fU_CLjcCQ7d3fdChuuojrz-OOE0mhIb1eeRlhhDygexqumbYZrl7bvTv40uJv8Z1-A1kPla9gfJ78bCLxIOOzCVXNMxpJRFvtKv5z_-cJph74ekdLYurNqg2a1rLzr7-z_VxmIYyKsMOvr0vAgI_MGA8D4b7B_UhUy1LwG2Mc52DkXvm8QjO1_Erf-JR9Wa3WNx4RouMW6rhmt1FDUk2AtZsTOI6gONEpycqFKwoFWRRLajTWGpa9Hs8256_LJ21ikPooyO04WYhwZ0cbxNYSgwKFuN5StzSPrwuCABYZ9SFbedZukH-KVmPkAl-vOeY1kMbnTG-hTbLKeRFjrjh_IwGgg6ktQiON-rGH7niG2kjIVVJAZ7NyFdHLYvdKcFs9GcpGksYS-8BFLUa1rgiIBKZwt_U9p7zCYO4waLNQ2L9N4bG0X2FHmoZVTELm7RKECQfa-HfBs-nqz6U_laYmkDFdHCOiV0S8sDzhSKM2YrnMFWhQfEszODkisvi9Xcl4nxKpz7BPBgV7M_0Xgy0SkLZRMLdrVvged53hbxv760zKISyRw1ESEQm_O_o9UmEkpBXuX47EJUtHZUndbvWI_u4_RXP2VnQ2-wRxlkBpHF4lVCAcUzcK4hZ34m5I3zLUJBS498onm_ikyiE63KlrnV8f--iOdkoSLmKFz5KarHtEoqvG5md9rHZPgxNQONg5ddOgqa_XepDSzb31IvlrdC0ZtCQtcfMOsFYZ8RcPCB9C__XaXuSE7XLHvG14fV3hBZ_23ZwAx8-HbCJAC0gWaFN864wGs2wA9A5_fjbr9gPGHHw-T5rV5sv5AYdgNHt_iyxOuQkNBy-_atc8kbeO9JvHTtL8gr3Sa0oi3DyPWZoQfTop6cYb2phX2TD-Pr8XqGLIsWxSabuaqSVBqBV72C2abz4IB0VNduV4fEdPl44xYvnDc4Y9oG1-UPcXoXQ" nonce="7bfffbd82e55abfd7a5218fee36ef4b9" charset="UTF-8"></script></head>
+
+<body>
+    <div class="form-container">
+        <h2>Enter Pollutant Levels</h2>
+        <form action="/predict" method="POST">
+            <label for="pm25"class="required-label">PM2.5 (µg/m³):</label>
+            <input type="number" name="pm25" min="0" required>
+
+            <label for="pm10"class="required-label">PM10 (µg/m³):</label>
+            <input type="number" name="pm10" min="0" required>
+
+            <label for="o3"class="required-label">O₃ (ppb):</label>
+            <input type="number" name="o3" min="0" required>
+
+            <label for="so2"class="required-label">SO₂ (ppb):</label>
+            <input type="number" name="so2" min="0" required>
+
+            <label for="no2"class="required-label">NO₂ (ppb):</label>
+            <input type="number" name="no2" min="0" required>
+
+            <input type="submit" value="Predict AQI & Health Class">
+        </form>
+    </div>
+</body>
+
+</html>

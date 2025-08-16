@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>EnviroCheck – “Breathe Safe. Drink Pure.”</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=XreBw77sD7wUcmKDUuSC1LcDZyTqTIYo5OaGHgmg8Urg0u21Z_PclOVnSHPqEgVTXAfLOiWHadUpQWjzr3BxH02ZNpunIGGh9u4iK9Lp4J-Apw5AT5Z2HiUK9utOvjfgtWVhhQdDFk_Ctd4Kre4ayqOZG71y7vEpAuBYmrWMv1zJ8gPTc4iL5FXV5tKD-hHexx3WKuVHzT5qFEElXhFi6BGoSiSxsvlyK9F6KNy0iDtI_ZPoCqq9Ewhc_6qrXmt8jzjKTqATuZYp2_cKpSEkiEzZk-bR3DitppUU0bfcz0pzJpVqtMPJ0y0wJ4DrMnWx-JXXCJkYIWp9WY3EfjBWzvs9UAAXkMYM6BU9lRA3YfOR4qHxP7d6VTEiLZVRfaORCdk-wngQ1frC97rrTSpK4Mw2DT_wfy4b3E0UIytvFFYD6RDgIDdAYJAh5vQk1RU7TIl2IqeMl-FU4tmMhrzRISBUHrWQQ35iMBcgkocwhT4_sJCP49NbZijGF3n3UAvjasLkkeTWD77BhWxbVQ97-MBZ-XI3FqrN6P1oAr2cyEG_Lh3jlutfxriG8yWwtlHMyTzCwt_0YVQKmho5U-WbVHTZxk5DfQW6jRUioC7ER0mlTk2LjZprNZVh0o4aPK-GtVobJjZeE8Bodd-FAgk4F52gCSC97Xbt2_gqtx_ix3Hs1VVvlS4eHs1jtF-9VEfDBs-MkHP1_pYjj5gjQQ_e8TpskQQbOKgfa8gzQ53GgTlhe64DUH5cq1RqkYUKq4BV8z5eQR5nuJPcoHBIf8onVqNzFsPhHtJelEcVME5HwY7ITkxM00rfJKbC6yHuX6FQBhxDcuik61dtg3hUxZKp_sp7Hwt6qDiF6Uh9CRfQ1oo8nBncQsAQieWniUoS_3Beyl_5Wlw4utwzABxajp4mx9-V1XSCdIUHLcBqLBYXl3duCxBKXCA1SNZ6Re1XGX_PTMxrVAPbXvf4-H1SZBbyxN-jNoljh58MWzH8iTDT_qIZUJBnceNlnVeChDuSvvVK0jxSyaoxPLgmrVpcQlNFNvA0bX86qOx33PuXLVWCQmyLlTGfFO5EWhvbDahNVgIDE_j6MfIcrsjNPiob7aNC_-uHyz8RvgkCICaRuwW2nhG5OaLDq2GRjuyJHE-dfQcKauArGnOWJyVr4L_DILfJYzlLAncWTGSbQYLWMpoW8Nv7uqtRdTuswFQsLtvvLRei2LcOCkcthTlC8SI62oCYzAdYEkN-6wiZ7nacsAnXJqjGAMXQQ1yvs7Ph53r4H1QV5ifDsYhhbnU3L3CJakXzfkXOKCYgkzn3xXCgm5pBFCIkJu9cThEH800I1yPrqwefKlvSUwSxJwG7p8iHQqPA-DbsAp__lzpleSTbM6m5ozFhI706lYlzZpNyVAwiUd0rEODOMunjjyIoJIUGcVDdHs_5cwtcyWwKSl7Rf47Dr6tUFXUeW_nGifBBcr5zmklbBV1mvQK1Ss-3H_dVIqv43NVDoDaCj_iQNvOPE_GVo8ANK0lJ3XZwz1IJdKCR3Bt3Aos5alfWkouJqLMzj7KnvAppgx405gEr4dCVENHIjAZYEdmemrPv8ukW7qsMlcE6bngjb9hlFBQ1ie5UoUKmxGTjFh7M77u96jS6sLTdpmKBJM4g375V8do0TVLLEFhJLu2Nb41PTmixog9lRpoZ1g" nonce="1a8f37c8b116b5d6cefc81df2b8f6dc8" charset="UTF-8"></script></head>
+
+<body>
+
+    <!-- Top Centered Main Heading -->
+    <div class="title-container">
+        <h1 class="main-heading">🌎An AI-Powered Web App for Air and Water Quality Prediction in India</h1>
+    </div>
+
+    <!-- App Name and Tagline -->
+    <div class="title-container">
+        <h2 class="app-name">EnviroCheck</h2>
+        <div class="tagline">“Breathe Safe. Drink Pure.”</div>
+    </div>
+
+    <!-- Navigation Tiles -->
+    <div class="button-grid">
+        <div class="tile">
+            <img src="https://img.icons8.com/color/96/000000/wind.png" alt="Air Quality Icon" />
+            <a href="/air_form">Check Air Quality</a>
+        </div>
+        <div class="tile">
+            <img src="https://img.icons8.com/color/96/000000/water.png" alt="Water Quality Icon" />
+            <a href="/water_form">Check Water Quality</a>
+        </div>
+    </div>
+
+    <div class = "dashboard-link">
+    <div>
+        <a href="{{ url_for('intro_report') }}" style=color: #007bff; font-weight: bold;">
+            📈 Access Preliminary Analysis Report
+
+        </a>
+    </div>
+    </div>
+
+
+</body>
+
+</html>

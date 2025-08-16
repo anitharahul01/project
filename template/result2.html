@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Water Quality Result</title>
+    <script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=zB6Dx2DsoTrazQvxOaKaO2xDkyc2q90nT8VHkpBwhDD7gKZz6OOTSBDbgsAwNtVGXi0fTB3Omighmu-FAB4QCJ-NYDY4WdfXU07VrGqN6cmp4X6XJH_MjjRBixrRaQXQ2xk4tn53MlX8Hr4f6eYcZzx5g6xE6IGEDCRA8qJSwiDdIxT2cxconk2nUOtvOxL0VqVoqKWODmn17W9IV553BOsqIBSrDVE-6DTT3tJCZdwo5ofV_kPuCKM2lpKBJrsw9YFwD1d2dhQyqgq6X1S7cwFV_R-iFTcLejp_w2BJJUBG38kodagHCYuYvP9qbZk7wwNqM633oyJt36V93NbIwDc1Rs82r1twbxikg4WrH7RQjR4G1JwZvhnL8l7rCh_nzgS3kByPTo5SYMTytE5zgJ2J1c7-isJzBUehxd0vpXKhxkOz54XCCGHUIY5RSrDWhrzKS3hCbrEUy1FkuBVw33_c_xgmqcYYf8ZuiX0wfwhHjkPeBuOInoKaOtv5i23yC7BuLZxubCpkjDke9sPcLlPIAER9jzY_LkfAs6DeSAhEsVf953Amigzzw98i050-qmnDt2-hMvLxKyf7Uwmjmk29cOWODGmY-C0e_GjY1bb5OorXbwAsg3teSu-xBtxUXovhhR9uUezjEYN5sx8TKJcVa7afYjj0vikbTN8nPWKgthIum-kkSPFxQJDWzRlyTjeWE7xvgKari9OC54woF8sWqHAzWpMLv-fu6p8DHe39A8-7KHe-x16648CjZl0HqHrymmbQW90oEU2_MOtvwOod314IR_CMR2F44WLZtQygv78FAXcxgoh4RJxcbjdJH6E7f63ZMXRkOl7Kfn9PKTz-A2hrJ0TjQf1gEMp_uTdfTIB4kO7SyZWy00XKUd5rjvhOVPdHcmpwT6Mr8Xmsyh82VkpdjiZsSi45mo9m5nXL-Q-q3xXdNc--gFdnpWLcXZ_dNEEgS1jVEdSZxOMsbOJNSfthb9_0CKabvrP66LSpEpLoocX43znU-uXiVSg0HQ5EHQd40ztK1PTza80i34HVsfFlOi_g3a4murmVgHDNOM9d3Qexm6ERsVZxKr5ZNHQZUTJvoPDk9no32o2iyV_vl-2ZVff6I-qi8-b1mqH_b6HOFoO2n58B4f0hlckVJqQvJZFK5mFFwSa3lMcPDB_JitTLWMogH_6aqywC434jYUeXQpQB7MczOeciwbKoWKkd22qwZVj5ivusKkRbBQOv-uVWDrQHWtKc7PcG9gc8mh0hIyyg1Oeqct6LDxxfpt3xAoWJ-ALH_51lf6viYOqTp7tKiouEvsCmOpPmywiU1WwVjrT5DbHAp9aOusDtPD4nPZaT5aGpTSV4fsWooN1Hy0DJoeqprse4zbgYfX9JFET303ahSozNG57QWgbKrlUBvETbzQBiQhFsd1-4rsW9iPLuPWSOuuEHixYH0SwDFzMclGzdT4AEwTDeRVv0GEIjXaBq8Z0HvSIDppI82Ee2EiLY_pDjTwLWtdgyhmwSP2aY3tBZppaDHDkzcT1JF8giaxz9sloDv7rRntR6xEfYzsvuO9i_IFTAig9EXT2LSYCN-yu86N6erck7tCSSydmZ1jZ5VQpawhJUcMq21RYhzZV1riCzLy8aH_WODG3kUTNT5z9rDl1oQSkyKxFigXZetG40IKAs5J-GL0ao3w" nonce="28dc702f82ea04b611b1eb9d2252e766" charset="UTF-8"></script><style>
+        body {
+            background-image: url('/static/image2/water.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #eaf7fb;
+            padding: 40px;
+            text-align: right;
+        }
+
+
+
+        h1 {
+            font-size: 45px;
+            text-align: center;
+            color: #073147;
+            margin-bottom: 150px;
+        }
+
+        .predicted_wqi {
+            font-size: 35px;
+            color: #14498e;
+            font-weight: bold;
+            text-align: right;
+            padding-right: 170px;
+        }
+
+        .potability-status {
+            font-size: 28px;
+            margin-top: 20px;
+            color: #d00000;
+            text-align: right;
+            padding-right: 100px;
+        }
+
+        .safe {
+            color: #2a9d8f;
+        }
+
+        .advice {
+            margin-top: 20px;
+            font-size: 18px;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            color: rgb(19, 12, 12);
+            padding-left: 900px;
+        }
+
+        .button {
+            margin-top: 30px;
+            text-align: right;
+            padding-right: 150px;
+        }
+
+        .button a {
+            text-decoration: none;
+            background-color: #0077b6;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Water Quality Prediction</h1>
+    
+    <div class="predicted_wqi">WQI: {{ wqi }}</div>
+
+    {% if potability == "Potable" %}
+    <div class="potability-status safe">Status: {{ potability }} ✅</div>
+    {% else %}
+    <div class="potability-status">Status: {{ potability }} ❌</div>
+    {% endif %}
+    <div class="advice">
+        {% if potability == "Potable" %}
+        <br>✅ Water quality is safe for consumption.<br>
+        No treatment required—suitable for drinking and domestic use.
+    
+        {% elif potability == "Non-potable" %}
+        ❌ Water is unsafe for drinking.<br>
+        Avoid consumption without proper treatment—may contain harmful contaminants.
+    
+        {% else %}
+        ⚠️ Water may be conditionally safe.<br>
+        Recommend testing for specific parameters (e.g., nitrates, TDS, pathogens)
+        before use.
+        {% endif %}
+    
+    </div>
+
+
+    <div class="button">
+        <a href="/water_form">Try Another Prediction</a>
+    </div>
+    <br>
+    <div class="button">
+        <a href="/">Go to Air Quality Form</a>
+    </div>
+
+</body>
+
+</html>

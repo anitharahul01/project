@@ -1,0 +1,99 @@
+/* Reset and base styles */
+html,
+body {
+    height: 90%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url('/static/image/env.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+}
+
+/* Container for headings */
+.title-container {
+    margin-top: 40px;
+    padding: 10px;
+}
+
+/* 🌎 First heading */
+.main-heading {
+    font-size: 2em;
+    color: #0f3258;
+    /* Bootstrap blue */
+    margin-bottom: 20px;
+}
+
+/* 🧭 App name */
+.app-name {
+    font-size: 3.5em;
+    color: #000000;
+    /* Black */
+    margin: 10px 0;
+}
+
+/* 💬 Tagline */
+.tagline {
+    font-size: 1.2em;
+    color: #533a3a;
+    /* Light grey */
+    font-style: italic;
+}
+
+/* 🔘 Navigation tiles */
+.button-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 60px;
+    flex-wrap: wrap;
+}
+
+.tile {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    padding: 20px;
+    width: 180px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.tile:hover {
+    transform: scale(1.05);
+}
+
+.tile img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 10px;
+}
+
+.tile a {
+    font-size: 17px;
+    display: block;
+    font-weight: bold;
+    color: #007BFF;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.tile a:hover {
+    text-decoration: underline;
+}
+
+.dashboard-link {
+    text-align: center;
+    margin-top: 60px;
+    /* Increase this for more vertical gap */
+}
+
+.dashboard-link a {
+    font-size: 17px;
+    color: #007bff;
+    font-weight: bold;
+}

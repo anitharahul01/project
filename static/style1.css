@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 50px;
+    font-size: 1.5em;
+    background-image: url('/static/image1/sky.webp');
+    /* Add your image here */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #333;
+}
+
+
+.form-container {
+max-width: 600px;
+    margin: auto;
+       
+}
+h2 {
+    text-align: center;
+}
+
+input[type="number"] {
+    width: 100%;
+        padding: 10px;
+        background-color: #e9edf0;
+        /* Light grey input */
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        /* Gap after last input */
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: .6em;         /* increase font size */
+    cursor: pointer;
+    margin: 20px auto;
+    display:block        /* center the button */
+}
+
+
+input[type="button"]:hover {
+    background: #251c1c;
+}

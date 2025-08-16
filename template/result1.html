@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Air Quality Prediction Result</title>
+    <script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=HLCURhp6nazDUq8u5iiPsj9bsyIwAnxB5zQVb9ly7i8giUHQUE_-umAAwW-fLJkeJkK0rZYPcvaz4fiTQL9WkronGD-iWSKhCjRZTMI-6qzFov4DNuBpURKrNwKAN0dZRxH0JgjrKUByNPKiGOB_4_0X6KfdwYtomWnepRJ4wXgNySe9vqYjNwtS94i0nzKkAucLS8dQ9PbkX3hm80wijroJDV0jDc79G1KCo5LiZI4eAFFuih_aRZkQ-thcKGjKHaEWaOn30gGmrg59TBbFBLP_N9DSat8Vm639PRl0VIoKg_D5RXhuak9fA_QPiW3g26qt6_fHMsuC5a8iUbOtl_DxcCYmloSamFW7TO358JWmE5hE75dG6mtByAr4-AGAXF1_oIGdXIJuFZLikpbOmVnTqewSGIMQYTijhLcPSgT9_0LVk94bq3Rsn8j9dy_UEpKmFI1uVOvZA-A_aL0KkQV7rSlr5db5Ju5IS2OMxII_WC2p69WUh1ZP8imJ0z049wBu5MlFKYTbhwGc_x4ma2-LMwpZQcdo61QmnAy94fY7FYTGOZdt-4iQA6HtuzP3xrk6O6Bm8zh6Yv_Vrj9lQBLPoD8O8VLhJ0TC1qV0O2xxwEPSQrHpMOXDIabWLQjIJM49VdWtNvHc2dSiP3eExxHJBCtzcT1GxCEaZS6dQzCV87piCJ7IV86_mRdcCESGm7gKf07ll65Crj3icU5ixQnyYjtIieWfyGhU-bUsNBvRuPMVAOn6XlCOUOCyuNFGuid3kOWyLpf3uuCqCQ_8tcO2fsQdiAEWECp7Yhz0GLbxEIUATHvVlaGLLVKO6DkOW1MMxe97WhR7eEI3rkZTyT8jQoF9vhRZSw31Cb9N49dEM4O_ixVFO29T4NB79YYNmefEknsBpGCDC-QjeNRZZ8eeS2S8BrFUqpSuUs0Dr-gPNY8qjUrUA1jGoqfHYUpN2OWf5BsIDnWaq6IbTb8fbynEut9iOFCwi2Z15bFPyCPuhf2ObPGmUM5zV9pRc3K8O89V2JgFummzqpp0FjsiaeeYKWZjqF8Qt0MWXh5bC7NLkdmHT1pxa8aFwQqdBextKWs3wmAJaSc5XZKxW09x1MGdwCH7SrBVvcGLHchAimKzh89RNYEJyFwYv3KqTSegGRc-ezkN6FbfUAKPWxZ0Xybp_xhHj4O0MdXO122KIjaXVjV66eCAMG9Yxph7Pppn7Ta222ibkHBiDotjJNqdQrz2le2yOmhluntj9aZDa_jah-dhDv6SAnXK1wwm7nkb-CHppfNd1-WSzWyTP_FEG_t8qjz965-YuqpFCO-IMVozVsIA25IzTrnj7fF4ufYWlVlDScjaceW_UVd8J5hPVdYOIU_ejjEOwPawBZz-1tJkOhZB8LEyuOOzSsn_jgHH7cEff3HJ3rUeFyrlU2lpjroeO1Kh3IxDxp9gTFRRLiOHi3Xc7EE79fnj4CMCu0RUeoicIPnt5Ps8hNQnVIA7bkDF9mx-kyxzVYeQvHlt2_cqOKHoQmYzzOXHwKed1QUvEiyAdEZtRXcSI7Wj6a-2CJQTsKlvC5fp1ZjpEmcAHb77W2ZUZh4pS7CsDKIjEBe69PUbZy0p1fft3C8NjpiNZ80TMgDG4kAxor8Hi1VAEV0dFx6-hZ0HS1lS98W5N0Kti0SivB-VeEniFFILLjXIMg" nonce="c8427d315ed43338473b908e9a3e7071" charset="UTF-8"></script><style>
+        body {
+            background-image: url('/static/image1/air.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            color: white;
+            text-align: center;
+            font-family: "Segoe UI", sans-serif;
+            padding: 40px;
+
+        }
+
+
+        h1 {
+            color: #080101;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .aqi-value {
+            font-size: 100px;
+            font-weight: 900;
+            color: #a85656;
+            /* White for high contrast */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            /* Makes it pop over any background */
+            margin-top: 20px;
+        }
+
+        .health-class {
+            color: #05090be4;
+            font-size: 32px;
+            font-weight: bold;
+            margin-top: 20px;
+            text-shadow: 1px 1px 3px rgba(24, 21, 21, 0.5);
+        }
+
+
+        .healthy {
+            color: #041e12;
+            font-size: 30px;
+            font-weight: bold;
+            text-shadow: 1px 1px 3px rgba(152, 75, 75, 0.5);
+        }
+
+        .unhealthy {
+            color: #ec3427;
+            font-size: 28px;
+            font-weight: bold;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+
+        .advice {
+            margin-top: 80px;
+            font-size: 18px;
+            background-color: #222629;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .back-button {
+            margin-top: 130px;
+        }
+
+        .back-button a {
+            text-decoration: none;
+            background-color: #1976d2;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Prediction Result</h1>
+    <div class="aqi {{ 'unhealthy' if health_class == 'Unhealthy' else 'healthy' }}">
+        AQI: {{ aqi }}
+    </div>
+    <div class="health-class">
+        <strong>Health Class:</strong>
+        <span class="{{ 'unhealthy' if health_class == 'Unhealthy' else 'healthy' }}">
+            {{ health_class }}
+        </span>
+    </div>
+
+    <div class="advice">
+        {% if health_class == "Unhealthy" %}
+        ⚠️ Air quality may be hazardous. Limit outdoor activities and consider using a mask.
+        {% elif health_class == "Healthy" %}
+        ✅ Air quality is acceptable. You can enjoy outdoor activities as usual.
+        {% else %}
+        ℹ️ Health impact uncertain—use caution and check pollutant details.
+        {% endif %}
+    </div>
+
+    <div class="back-button">
+        <a href="/">🔄 Try Another Prediction</a>
+    </div>
+
+</body>
+
+</html>
