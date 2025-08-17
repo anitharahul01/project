@@ -2,8 +2,8 @@ from flask import Flask, request, render_template
 import numpy as np
 import pickle
 
-#app = Flask(__name__)
-app = Flask(__name__, template_folder="template")
+app = Flask(__name__)
+
 
 # Load models
 def load_model(path):
